@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_10">
+
+    <com.ms.square.android.expandabletextview.ExpandableTextView
+        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/etv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expandableTextView:animDuration="200"
+        expandableTextView:collapseDrawable="@drawable/ic_expand_less"
+        expandableTextView:expandDrawable="@drawable/ic_expand_more"
+        expandableTextView:maxCollapsedLines="2">
+
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:background="@android:color/transparent"
+            android:text="展开"/>
+
+    </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+
+</android.support.constraint.ConstraintLayout>
